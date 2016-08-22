@@ -1,0 +1,153 @@
+<!--
+    
+-->
+<html>
+    <head>
+        <title>PEOPLE AND CLOUDS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="stylesheets/css/56.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="http://d2v52k3cl9vedd.cloudfront.net/plangular/3.0.1/plangular.min.js"></script>
+        
+        <script>
+                $(window).load(function() {
+                $(".se-pre-con").fadeOut("slow");;
+            });
+        </script>
+        
+    </head>
+    <body ng-app="app">
+        <div class="se-pre-con"></div>
+        <div class="home" id="go-away">
+            <img src="assets/people-and-clouds.gif">
+            <a href="#" id="goodbye"><button class="sc-control-btn" ng-click="play(index)" ng-show="player.playing == index"><i class="fa fa-play" aria-hidden="true" style="color:#fff;"></i></button></a>
+        </div>
+        <div class="iframe-container">
+            <div class="iframe-width">
+                <iframe src="http://projects.fifty6.net/yobi/1/index.html" class="post" id="myIframe"></iframe>
+                <iframe src="http://projects.fifty6.net/yobi/2/index.html" class="post" id="myIframe"></iframe>
+                <iframe src="http://projects.fifty6.net/yobi/3/index.html" class="post" id="myIframe"></iframe>
+                <iframe src="http://projects.fifty6.net/yobi/4/index.html" class="post" id="myIframe"></iframe>
+                <iframe src="http://projects.fifty6.net/yobi/5/index.html" class="post" id="myIframe"></iframe>
+                <iframe src="http://projects.fifty6.net/yobi/6/index.html" class="post" id="myIframe"></iframe>
+            </div>
+        </div>
+        <div class="sc-wrap">
+            <div class="sc-player" plangular="https://soundcloud.com/yobialan/sets/people-clouds-ep">
+                <div class="song-titles">{{track.title}}</div>
+                <div class="sc-controls">
+                    <button class="sc-control-btn" ng-click="play(index)" ng-show="player.playing == index"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    <button class="sc-control-btn" ng-click="pause(index)" ng-hide="player.playing == index"><i class="fa fa-pause" aria-hidden="true"></i></button>
+
+                    <progress class="progress"ng-click="seek($event)" ng-value="currentTime / duration"></progress>
+                    
+                    <button class="sc-control-btn"><span ng-click="previous()" class="icon-prev" style="font-size:14px;color:#fff;"><i class="fa fa-fast-backward" aria-hidden="true"></i></span></button>
+                    
+                    <button class="sc-control-btn"><span ng-click="next()" class="icon-next" style="font-size:14px;color:#fff;"><i class="fa fa-fast-forward" aria-hidden="true"></i></span></button>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var app = angular.module('app', ['plangular'])
+              .config(function(plangularConfigProvider){
+                plangularConfigProvider.clientId = 'aaeaff0e45f3c2d8bd4b3e0c0b99beab';
+              });
+        </script>
+        <script>
+            var $currentElement = $(".post").first();
+
+            $(".icon-next").click(function () {
+                var $nextElement = $currentElement.next('.post');
+                // Check if next element actually exists
+                if($nextElement.length) {
+                    // If yes, update:
+                    // 1. $currentElement
+                    // 2. Scroll position
+                    $currentElement = $nextElement;
+                    $('html, body').stop(true).animate({
+                        scrollTop: $nextElement.offset().top
+                    }, 1000);
+                }
+                return false;
+            });
+
+            $(".icon-prev").click(function () {
+                var $prevElement = $currentElement.prev('.post');
+                // Check if previous element actually exists
+                if($prevElement.length) {
+                    // If yes, update:
+                    // 1. $currentElement
+                    // 2. Scroll position
+                    $currentElement = $prevElement;
+                    $('html, body').stop(true).animate({
+                        scrollTop: $prevElement.offset().top
+                    }, 1000);
+                }
+                return false;  
+            });
+        </script>
+        <script>
+            $('body').addClass('stop-scrolling')
+        </script>
+        <script>
+            $( "#goodbye" ).click(function() {
+                $( "#go-away" ).fadeToggle("slow");
+            });
+        </script>
+        <!-- <script>
+         function newSite() {
+                var sites = ['http://projects.fifty6.net/yobi/1/index.html',
+                             'http://projects.fifty6.net/yobi/2/index.html',
+                             'http://projects.fifty6.net/yobi/3/index.html',
+                             'http://projects.fifty6.net/yobi/4/index.html',
+                             'http://projects.fifty6.net/yobi/5/index.html',
+                             'http://projects.fifty6.net/yobi/6/index.html']
+                // var i = 0;
+        
+                // function nextItem() {
+                //     i = i + 1; // increase i by one
+                //     i = i % arr.length; // if we've gone too high, start from `0` again
+                //     return arr[i]; // give us back the item of where we are now
+                // }
+        // 
+                // function prevItem() {
+                //     if (i === 0) { // i would become 0
+                //         i = arr.length; // so put it at the other end of the array
+                //     }
+                //     i = i - 1; // decrease by one
+                //     return arr[i]; // give us back the item of where we are now
+                // }
+        // 
+                // window.addEventListener('load', function () {
+                //     document.getElementById('output').textContent = arr[0]; // initial value
+                //     document.getElementById('prev_button').addEventListener(
+                //         'click', // we want to listen for a click
+                //         function (e) { // the e here is the event itself
+                //             document.getElementById('output').textContent = prevItem();
+                //         }
+                //     );
+        // 
+                //     document.getElementById('next_button').addEventListener(
+                //         'click', // we want to listen for a click
+                //         function (e) { // the e here is the event itself
+                //             document.getElementById('output').textContent = nextItem();
+                //         }
+                //     );
+                // });
+                // 
+                
+        
+                document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)];
+            }
+            
+            
+         </script> -->
+    </body>
+</html>

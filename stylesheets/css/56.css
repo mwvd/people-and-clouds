@@ -1,0 +1,101 @@
+/* line 1, ../sass/56.scss */
+* { margin: 0; padding: 0; }
+
+/* line 6, ../sass/56.scss */
+html, body { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: #002f52; }
+
+/* line 35, ../sass/56.scss */
+a { text-decoration: none; color: inherit; -webkit-transition: .3s; -moz-transition: .3s; transition: .3s; }
+
+/* line 43, ../sass/56.scss */
+.stop-scrolling { height: 100%; overflow: hidden; }
+
+/* line 48, ../sass/56.scss */
+.home { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background-color: #000; z-index: 565656565656; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; color: #fff; font-size: 2em; }
+
+/* line 61, ../sass/56.scss */
+.home img { width: 50%; height: auto; }
+
+/* line 66, ../sass/56.scss */
+iframe { width: 100%; height: 100%; position: relative; top: 0; left: 0; border: none; }
+
+/* line 75, ../sass/56.scss */
+#video-wrap { width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
+
+/* line 83, ../sass/56.scss */
+.sc-wrap { width: 100%; height: 100%; z-index: 56; position: fixed; top: 0; left: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
+
+/* line 93, ../sass/56.scss */
+.sc-player { margin-top: 50%; width: 250px; height: 30px; border: 1px solid #fff; position: relative; vertical-align: middle; }
+
+/* line 102, ../sass/56.scss */
+.song-titles { font-family: 'arapey', "arapey", arapey; font-size: 2em; color: #fff; text-transform: uppercase; transform: translateY(-40px); }
+
+/* line 110, ../sass/56.scss */
+.home { width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
+
+/* line 118, ../sass/56.scss */
+#audioplayer { width: 100%; height: 40px; margin: auto auto auto auto; border: 1px solid #fff; }
+
+/* line 125, ../sass/56.scss */
+#pButton { height: 20px; width: 20px; border: none; background-size: 50% 50%; background-repeat: no-repeat; background-position: center; float: left; outline: none; }
+
+/* line 136, ../sass/56.scss */
+.play { background: url("http://www.alexkatz.me/codepen/images/play.png"); }
+
+/* line 137, ../sass/56.scss */
+.pause { background: url("http://www.alexkatz.me/codepen/images/pause.png"); }
+
+/* line 139, ../sass/56.scss */
+#timeline { width: 90%; height: 16px; margin-top: 18px; float: left; border: 1px solid #fff; background: white; }
+
+/* line 149, ../sass/56.scss */
+#playhead { width: 16px; height: 16px; background: white; }
+
+/* line 156, ../sass/56.scss */
+progress, button { cursor: pointer; }
+
+/* .sc-tracks { position: absolute; height: 200px; top: 0; left: 0; font-size: 12px; line-height: 16px; margin-left: 13px; margin-bottom: 10px; margin-top: 4px; padding: 0; vertical-align: middle;
+} */
+/* line 175, ../sass/56.scss */
+button, button:active { border: none; background: transparent; font-size: 40px; margin: 0; }
+
+/* line 182, ../sass/56.scss */
+button:focus { outline: 0; }
+
+/* line 184, ../sass/56.scss */
+.active { transform: translateX(45px); }
+
+/* line 188, ../sass/56.scss */
+.sc-controls { position: absolute; left: 0; top: -10; bottom: 10px; width: 100%; height: 26px; margin: 10px; font-size: 10px; }
+
+/* line 199, ../sass/56.scss */
+.sc-controls button, .sc-controls small, .sc-controls small progress { display: inline-block; margin-right: 3px; color: #fff; }
+
+/* line 205, ../sass/56.scss */
+.sc-controls button { font-size: 14px; }
+
+/* line 209, ../sass/56.scss */
+.sc-control-btn img { width: 14px; height: 14px; display: inline-block; }
+
+/* .sc-player img { position: absolute; height: 375px; width: 375px; right: 0; top: 0; margin: 10px;
+} */
+/* line 224, ../sass/56.scss */
+progress { width: 165px; height: 10px; border-radius: 0; background-color: transparent; border: 1px solid #fff; margin: 6px; transform: translateY(4px); }
+
+/* line 234, ../sass/56.scss */
+progress::-webkit-progress-bar { background-color: transparent; }
+
+/* line 238, ../sass/56.scss */
+progress::-webkit-progress-value { background-color: #fff; }
+
+/* line 242, ../sass/56.scss */
+.no-js #loader { display: none; }
+
+/* line 243, ../sass/56.scss */
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+/* line 244, ../sass/56.scss */
+.se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(../../assets/waiting.gif) center repeat #ffffff; }
+
+@font-face { font-family: 'arapey'; src: url("../../assets/Arapey-Italic.ttf") format("truetype"); }
