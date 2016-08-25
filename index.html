@@ -101,6 +101,11 @@
                 $( "#go-away" ).fadeToggle("slow");
             });
         </script>
+        <script>
+            $('html, body').on('touchstart touchmove', function(e){
+                 e.preventDefault(); 
+            });
+        </script>
         <!-- <script>
          function newSite() {
                 var sites = ['http://projects.fifty6.net/yobi/1/index.html',
