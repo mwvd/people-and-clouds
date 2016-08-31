@@ -98,6 +98,22 @@
             });
         </script>
         <script>
+            audio.addEventListener('ended', function(){
+                $var $nextElement = $currentElement.next('.post');
+                // Check if next element actually exists
+                if($nextElement.length) {
+                    // If yes, update:
+                    // 1. $currentElement
+                    // 2. Scroll position
+                    $currentElement = $nextElement;
+                    $('html, body').stop(true).animate({
+                        scrollTop: $nextElement.offset().top
+                    }, 1000);
+                }
+                return false;
+            });
+        </script>
+        <script>
             $('body').addClass('stop-scrolling')
         </script>
         <script>
@@ -110,53 +126,5 @@
                  e.preventDefault(); 
             });
         </script>
-        <!-- <script>
-         function newSite() {
-                var sites = ['http://projects.fifty6.net/yobi/1/index.html',
-                             'http://projects.fifty6.net/yobi/2/index.html',
-                             'http://projects.fifty6.net/yobi/3/index.html',
-                             'http://projects.fifty6.net/yobi/4/index.html',
-                             'http://projects.fifty6.net/yobi/5/index.html',
-                             'http://projects.fifty6.net/yobi/6/index.html']
-                // var i = 0;
-        
-                // function nextItem() {
-                //     i = i + 1; // increase i by one
-                //     i = i % arr.length; // if we've gone too high, start from `0` again
-                //     return arr[i]; // give us back the item of where we are now
-                // }
-        // 
-                // function prevItem() {
-                //     if (i === 0) { // i would become 0
-                //         i = arr.length; // so put it at the other end of the array
-                //     }
-                //     i = i - 1; // decrease by one
-                //     return arr[i]; // give us back the item of where we are now
-                // }
-        // 
-                // window.addEventListener('load', function () {
-                //     document.getElementById('output').textContent = arr[0]; // initial value
-                //     document.getElementById('prev_button').addEventListener(
-                //         'click', // we want to listen for a click
-                //         function (e) { // the e here is the event itself
-                //             document.getElementById('output').textContent = prevItem();
-                //         }
-                //     );
-        // 
-                //     document.getElementById('next_button').addEventListener(
-                //         'click', // we want to listen for a click
-                //         function (e) { // the e here is the event itself
-                //             document.getElementById('output').textContent = nextItem();
-                //         }
-                //     );
-                // });
-                // 
-                
-        
-                document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)];
-            }
-            
-            
-         </script> -->
     </body>
 </html>
