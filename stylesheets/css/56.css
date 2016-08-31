@@ -140,7 +140,7 @@ progress::-webkit-progress-value { background-color: #fff; }
   /* line 365, ../sass/56.scss */
   #mobile-wrap-6 { background-image: url(../../assets/mbg6.png); background-position: center; background-size: cover; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 377, ../sass/56.scss */
-  .home { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background-color: #0000ff; z-index: 565656565656; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; color: #fff; font-size: 2em; }
+  .home { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background-color: #ff0000; z-index: 565656565656; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; color: #fff; font-size: 2em; }
   /* line 390, ../sass/56.scss */
   #goodbye button i { font-size: 14px; }
   /* line 394, ../sass/56.scss */
