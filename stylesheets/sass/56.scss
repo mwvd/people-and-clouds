@@ -264,6 +264,7 @@ progress::-webkit-progress-value {
 
 #social-email {
     position: fixed;
+    display: block;
     bottom: 50px;
     right: 50px;
     z-index: 100000;
@@ -271,13 +272,14 @@ progress::-webkit-progress-value {
 
 #social-soundcloud {
     position: fixed;
+    display: block;
     bottom: 50px;
     right: 60px;
     z-index: 100000;
 }
 
 .social-link a {
-    z-index: 100000;
+    z-index: 100000; 
 }
 
 @font-face {
