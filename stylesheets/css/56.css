@@ -99,22 +99,22 @@ progress::-webkit-progress-value { background-color: #fff; }
 .se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(../../assets/waiting.gif) center repeat #ffffff; }
 
 /* line 254, ../sass/56.scss */
-.social { font-size: 10px; color: #fff; opacity: 1; z-index: 100000; }
+.social { font-size: 14px; color: #fff; opacity: 1; z-index: 100000; }
 
 /* line 261, ../sass/56.scss */
 .social:hover { opacity: 1; }
 
 /* line 265, ../sass/56.scss */
-#social-email { position: fixed; bottom: 20; right: 25; z-index: 100000; }
+#social-email { position: fixed; display: block; bottom: 50px; right: 50px; z-index: 100000; }
 
-/* line 272, ../sass/56.scss */
-#social-soundcloud { position: fixed; bottom: 20; right: 20; z-index: 100000; }
+/* line 273, ../sass/56.scss */
+#social-soundcloud { position: fixed; display: block; bottom: 50px; right: 60px; z-index: 100000; }
 
-/* line 279, ../sass/56.scss */
+/* line 281, ../sass/56.scss */
 .social-link a { z-index: 100000; }
 
 @font-face { font-family: 'arapey'; src: url("../../assets/Arapey-Italic.ttf") format("truetype"); }
-@media (max-device-width: 769px) { /* line 289, ../sass/56.scss */
+@media (max-device-width: 769px) { /* line 291, ../sass/56.scss */
   #goodbye button i { font-size: 14px; }
-  /* line 293, ../sass/56.scss */
+  /* line 295, ../sass/56.scss */
   #iframe-container { width: 100%; height: 100%; overflow: hidden; } }
