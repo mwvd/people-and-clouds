@@ -118,15 +118,15 @@ progress::-webkit-progress-value { background-color: #fff; }
 
 @font-face { font-family: 'arapey'; src: url("../../assets/Arapey-Italic.ttf") format("truetype"); }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 299, ../sass/56.scss */
-  .home { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background-color: #0000ff; z-index: 565656565656; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; color: #fff; font-size: 2em; background-image: url(../../assets/mbg1.png); background-position: center; background-size: cover; }
-  /* line 315, ../sass/56.scss */
+  .home { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background-color: #0000ff; z-index: 565656565656; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; color: #fff; font-size: 2em; }
+  /* line 312, ../sass/56.scss */
   #goodbye button i { font-size: 14px; }
-  /* line 319, ../sass/56.scss */
+  /* line 316, ../sass/56.scss */
   #iframe-container { width: 100%; height: 100%; overflow: hidden; }
-  /* line 325, ../sass/56.scss */
-  #video-wrap { display: none; }
-  /* line 329, ../sass/56.scss */
-  .mobile-wrap { display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
+  /* line 322, ../sass/56.scss */
+  #video-wrap { display: none; width: 0%; height: 0%; }
+  /* line 328, ../sass/56.scss */
+  .mobile-wrap { display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: blue; }
   /* line 338, ../sass/56.scss */
   #mobile-wrap-1 { background-image: url(../../assets/mbg1.png); background-position: center; background-size: cover; }
   /* line 344, ../sass/56.scss */
@@ -138,26 +138,4 @@ progress::-webkit-progress-value { background-color: #fff; }
   /* line 362, ../sass/56.scss */
   #mobile-wrap-5 { background-image: url(../../assets/mbg5.png); background-position: center; background-size: cover; }
   /* line 368, ../sass/56.scss */
-  #mobile-wrap-6 { background-image: url(../../assets/mbg6.png); background-position: center; background-size: cover; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 380, ../sass/56.scss */
-  .home { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background-color: #ff0000; z-index: 565656565656; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; color: #fff; font-size: 2em; }
-  /* line 393, ../sass/56.scss */
-  #goodbye button i { font-size: 14px; }
-  /* line 397, ../sass/56.scss */
-  #iframe-container { width: 100%; height: 100%; overflow: hidden; }
-  /* line 403, ../sass/56.scss */
-  #video-wrap { display: none; }
-  /* line 407, ../sass/56.scss */
-  .mobile-wrap { display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
-  /* line 416, ../sass/56.scss */
-  #mobile-wrap-1 { background-image: url(../../assets/mbg1.png); background-position: center; background-size: cover; }
-  /* line 422, ../sass/56.scss */
-  #mobile-wrap-2 { background-image: url(../../assets/mbg2.png); background-position: center; background-size: cover; }
-  /* line 428, ../sass/56.scss */
-  #mobile-wrap-3 { background-image: url(../../assets/mbg3.png); background-position: center; background-size: cover; }
-  /* line 434, ../sass/56.scss */
-  #mobile-wrap-4 { background-image: url(../../assets/mbg4.png); background-position: center; background-size: cover; }
-  /* line 440, ../sass/56.scss */
-  #mobile-wrap-5 { background-image: url(../../assets/mbg5.png); background-position: center; background-size: cover; }
-  /* line 446, ../sass/56.scss */
   #mobile-wrap-6 { background-image: url(../../assets/mbg6.png); background-position: center; background-size: cover; } }
