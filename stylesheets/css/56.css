@@ -117,23 +117,43 @@ progress::-webkit-progress-value { background-color: #fff; }
 .mobile-wrap { display: none; }
 
 @font-face { font-family: 'arapey'; src: url("../../assets/Arapey-Italic.ttf") format("truetype"); }
-@media (max-device-width: 769px) { /* line 295, ../sass/56.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 299, ../sass/56.scss */
   #goodbye button i { font-size: 14px; }
-  /* line 299, ../sass/56.scss */
+  /* line 303, ../sass/56.scss */
   #iframe-container { width: 100%; height: 100%; overflow: hidden; }
-  /* line 305, ../sass/56.scss */
-  #video-wrap { display: none; }
   /* line 309, ../sass/56.scss */
+  #video-wrap { display: none; }
+  /* line 313, ../sass/56.scss */
   .mobile-wrap { display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
-  /* line 318, ../sass/56.scss */
+  /* line 322, ../sass/56.scss */
   #mobile-wrap-1 { background-image: url(../../assets/mbg1.png); background-position: center; background-size: cover; }
-  /* line 324, ../sass/56.scss */
+  /* line 328, ../sass/56.scss */
   #mobile-wrap-2 { background-image: url(../../assets/mbg2.png); background-position: center; background-size: cover; }
-  /* line 330, ../sass/56.scss */
+  /* line 334, ../sass/56.scss */
   #mobile-wrap-3 { background-image: url(../../assets/mbg3.png); background-position: center; background-size: cover; }
-  /* line 336, ../sass/56.scss */
+  /* line 340, ../sass/56.scss */
   #mobile-wrap-4 { background-image: url(../../assets/mbg4.png); background-position: center; background-size: cover; }
-  /* line 342, ../sass/56.scss */
+  /* line 346, ../sass/56.scss */
   #mobile-wrap-5 { background-image: url(../../assets/mbg5.png); background-position: center; background-size: cover; }
-  /* line 348, ../sass/56.scss */
+  /* line 352, ../sass/56.scss */
+  #mobile-wrap-6 { background-image: url(../../assets/mbg6.png); background-position: center; background-size: cover; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 364, ../sass/56.scss */
+  #goodbye button i { font-size: 14px; }
+  /* line 368, ../sass/56.scss */
+  #iframe-container { width: 100%; height: 100%; overflow: hidden; }
+  /* line 374, ../sass/56.scss */
+  #video-wrap { display: none; }
+  /* line 378, ../sass/56.scss */
+  .mobile-wrap { display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
+  /* line 387, ../sass/56.scss */
+  #mobile-wrap-1 { background-image: url(../../assets/mbg1.png); background-position: center; background-size: cover; }
+  /* line 393, ../sass/56.scss */
+  #mobile-wrap-2 { background-image: url(../../assets/mbg2.png); background-position: center; background-size: cover; }
+  /* line 399, ../sass/56.scss */
+  #mobile-wrap-3 { background-image: url(../../assets/mbg3.png); background-position: center; background-size: cover; }
+  /* line 405, ../sass/56.scss */
+  #mobile-wrap-4 { background-image: url(../../assets/mbg4.png); background-position: center; background-size: cover; }
+  /* line 411, ../sass/56.scss */
+  #mobile-wrap-5 { background-image: url(../../assets/mbg5.png); background-position: center; background-size: cover; }
+  /* line 417, ../sass/56.scss */
   #mobile-wrap-6 { background-image: url(../../assets/mbg6.png); background-position: center; background-size: cover; } }
