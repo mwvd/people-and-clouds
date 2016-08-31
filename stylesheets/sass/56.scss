@@ -297,4 +297,14 @@ progress::-webkit-progress-value {
         height: 100%;
         overflow: hidden;
     }
+    
+    iframe {
+        width: 200%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        border: none;
+        transform: translateX(-50%);
+    }
 }
