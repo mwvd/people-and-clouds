@@ -117,7 +117,7 @@ progress::-webkit-progress-value { background-color: #fff; }
 .mobile-wrap { display: none; }
 
 @font-face { font-family: 'arapey'; src: url("../../assets/Arapey-Italic.ttf") format("truetype"); }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 299, ../sass/56.scss */
+@media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) { /* line 299, ../sass/56.scss */
   #goodbye button i { font-size: 14px; }
   /* line 303, ../sass/56.scss */
   #iframe-container { width: 100%; height: 100%; overflow: hidden; }
@@ -137,7 +137,7 @@ progress::-webkit-progress-value { background-color: #fff; }
   #mobile-wrap-5 { background-image: url(../../assets/mbg5.png); background-position: center; background-size: cover; }
   /* line 352, ../sass/56.scss */
   #mobile-wrap-6 { background-image: url(../../assets/mbg6.png); background-position: center; background-size: cover; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 364, ../sass/56.scss */
+@media only screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { /* line 364, ../sass/56.scss */
   #goodbye button i { font-size: 14px; }
   /* line 368, ../sass/56.scss */
   #iframe-container { width: 100%; height: 100%; overflow: hidden; }
