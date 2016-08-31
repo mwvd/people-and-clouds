@@ -307,6 +307,9 @@ progress::-webkit-progress-value {
             @include boxflex;
             color: #fff;
             font-size: 2em;
+        background-image: url(../../assets/mbg1.png);
+        background-position: center;
+        background-size: cover;
         }
       
     #goodbye button i {
