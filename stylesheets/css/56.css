@@ -1,122 +1,57 @@
-/* line 1, ../sass/56.scss */
-* { margin: 0; padding: 0; }
+/*
+Error: Invalid CSS after "...display: none;l": expected "{", was "}"
+        on line 307 of /Users/MackenzieDavidson/XXX/Design/yobi/web/stylesheets/sass/56.scss
 
-/* line 6, ../sass/56.scss */
-html, body { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: #002f52; }
+302:         overflow: hidden;
+303:     }
+304:     
+305:     #video-wrap {
+306:         display: none;l
+307:     }
+308:     
+309:     .mobile-wrap {
+310:         display: block;
+311:         width: 100%;
+312:         height: 100%;
 
-/* line 35, ../sass/56.scss */
-a { text-decoration: none; color: inherit; -webkit-transition: .3s; -moz-transition: .3s; transition: .3s; }
-
-/* line 43, ../sass/56.scss */
-.stop-scrolling { height: 100%; overflow: hidden; }
-
-/* line 48, ../sass/56.scss */
-.home { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background-color: #000; z-index: 565656565656; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; color: #fff; font-size: 2em; }
-
-/* line 61, ../sass/56.scss */
-.home img { width: 50%; height: auto; }
-
-/* line 66, ../sass/56.scss */
-iframe { width: 100%; height: 100%; position: relative; top: 0; left: 0; border: none; }
-
-/* line 75, ../sass/56.scss */
-#video-wrap { width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
-
-/* line 83, ../sass/56.scss */
-.sc-wrap { width: 100%; height: 100%; z-index: 56; position: fixed; top: 0; left: 0; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -moz-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-flex-direction: column; flex-direction: column; }
-
-/* line 93, ../sass/56.scss */
-.sc-player { width: 250px; height: 30px; border: 1px solid #fff; position: relative; vertical-align: middle; }
-
-/* line 101, ../sass/56.scss */
-.song-titles { font-family: 'arapey', "arapey", arapey; font-size: 2em; color: #fff; text-transform: uppercase; transform: translateY(-40px); }
-
-/* line 109, ../sass/56.scss */
-.home { width: 100%; height: 100%; position: fixed; top: 0; left: 0; }
-
-/* line 117, ../sass/56.scss */
-#audioplayer { width: 100%; height: 40px; margin: auto auto auto auto; border: 1px solid #fff; }
-
-/* line 124, ../sass/56.scss */
-#pButton { height: 20px; width: 20px; border: none; background-size: 50% 50%; background-repeat: no-repeat; background-position: center; float: left; outline: none; }
-
-/* line 135, ../sass/56.scss */
-.play { background: url("http://www.alexkatz.me/codepen/images/play.png"); }
-
-/* line 136, ../sass/56.scss */
-.pause { background: url("http://www.alexkatz.me/codepen/images/pause.png"); }
-
-/* line 138, ../sass/56.scss */
-#timeline { width: 90%; height: 16px; margin-top: 18px; float: left; border: 1px solid #fff; background: white; }
-
-/* line 148, ../sass/56.scss */
-#playhead { width: 16px; height: 16px; background: white; }
-
-/* line 155, ../sass/56.scss */
-progress, button { cursor: pointer; }
-
-/* .sc-tracks { position: absolute; height: 200px; top: 0; left: 0; font-size: 12px; line-height: 16px; margin-left: 13px; margin-bottom: 10px; margin-top: 4px; padding: 0; vertical-align: middle;
-} */
-/* line 174, ../sass/56.scss */
-button, button:active { border: none; background: transparent; font-size: 40px; margin: 0; }
-
-/* line 181, ../sass/56.scss */
-button:focus { outline: 0; }
-
-/* line 183, ../sass/56.scss */
-.active { transform: translateX(45px); }
-
-/* line 187, ../sass/56.scss */
-.sc-controls { position: absolute; left: 0; top: -10; bottom: 10px; width: 100%; height: 26px; margin: 10px; font-size: 10px; }
-
-/* line 198, ../sass/56.scss */
-.sc-controls button, .sc-controls small, .sc-controls small progress { display: inline-block; margin-right: 3px; color: #fff; }
-
-/* line 204, ../sass/56.scss */
-.sc-controls button { font-size: 14px; }
-
-/* line 208, ../sass/56.scss */
-.sc-control-btn img { width: 14px; height: 14px; display: inline-block; }
-
-/* .sc-player img { position: absolute; height: 375px; width: 375px; right: 0; top: 0; margin: 10px;
-} */
-/* line 223, ../sass/56.scss */
-progress { width: 165px; height: 10px; border-radius: 0; background-color: transparent; border: 1px solid #fff; margin: 6px; transform: translateY(4px); }
-
-/* line 233, ../sass/56.scss */
-progress::-webkit-progress-bar { background-color: transparent; }
-
-/* line 237, ../sass/56.scss */
-progress::-webkit-progress-value { background-color: #fff; }
-
-/* line 241, ../sass/56.scss */
-.no-js #loader { display: none; }
-
-/* line 242, ../sass/56.scss */
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-
-/* line 243, ../sass/56.scss */
-.se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(../../assets/waiting.gif) center repeat #ffffff; }
-
-/* line 253, ../sass/56.scss */
-.social { font-size: 14px; color: #fff; opacity: 1; z-index: 100000; }
-
-/* line 260, ../sass/56.scss */
-.social:hover { opacity: 1; }
-
-/* line 264, ../sass/56.scss */
-#social-email { position: fixed; display: block; bottom: 30px; right: 30px; z-index: 100000; font-size: 12px; }
-
-/* line 273, ../sass/56.scss */
-#social-soundcloud { position: fixed; display: block; bottom: 30px; right: 60px; z-index: 100000; }
-
-/* line 281, ../sass/56.scss */
-.social-link a { z-index: 100000; }
-
-@font-face { font-family: 'arapey'; src: url("../../assets/Arapey-Italic.ttf") format("truetype"); }
-@media (max-device-width: 769px) { /* line 291, ../sass/56.scss */
-  #goodbye button i { font-size: 14px; }
-  /* line 295, ../sass/56.scss */
-  #iframe-container { width: 100%; height: 100%; overflow: hidden; }
-  /* line 301, ../sass/56.scss */
-  iframe { width: 200%; height: 100%; position: relative; top: 0; left: 0; border: none; transform: translateX(-50%); } }
+Backtrace:
+/Users/MackenzieDavidson/XXX/Design/yobi/web/stylesheets/sass/56.scss:307
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:637:in `block'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:400:in `media_directive'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:218:in `special_directive'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:193:in `directive'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/MackenzieDavidson/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...display: none;l\": expected \"{\", was \"}\"\A         on line 307 of /Users/MackenzieDavidson/XXX/Design/yobi/web/stylesheets/sass/56.scss\A \A 302:         overflow: hidden;\A 303:     }\A 304:     \A 305:     #video-wrap {\A 306:         display: none;l\A 307:     }\A 308:     \A 309:     .mobile-wrap {\A 310:         display: block;\A 311:         width: 100%;\A 312:         height: 100%;"; }
