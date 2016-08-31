@@ -126,16 +126,16 @@ progress::-webkit-progress-value { background-color: #fff; }
   /* line 324, ../sass/56.scss */
   #video-wrap { display: none; width: 0%; height: 0%; }
   /* line 330, ../sass/56.scss */
-  .mobile-wrap { display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: blue; z-index: 2; }
-  /* line 341, ../sass/56.scss */
+  .mobile-wrap { display: block; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 2; }
+  /* line 340, ../sass/56.scss */
   #mobile-wrap-1 { background-image: url(../../assets/mbg1.png); background-position: center; background-size: cover; }
-  /* line 347, ../sass/56.scss */
+  /* line 346, ../sass/56.scss */
   #mobile-wrap-2 { background-image: url(../../assets/mbg2.png); background-position: center; background-size: cover; }
-  /* line 353, ../sass/56.scss */
+  /* line 352, ../sass/56.scss */
   #mobile-wrap-3 { background-image: url(../../assets/mbg3.png); background-position: center; background-size: cover; }
-  /* line 359, ../sass/56.scss */
+  /* line 358, ../sass/56.scss */
   #mobile-wrap-4 { background-image: url(../../assets/mbg4.png); background-position: center; background-size: cover; }
-  /* line 365, ../sass/56.scss */
+  /* line 364, ../sass/56.scss */
   #mobile-wrap-5 { background-image: url(../../assets/mbg5.png); background-position: center; background-size: cover; }
-  /* line 371, ../sass/56.scss */
+  /* line 370, ../sass/56.scss */
   #mobile-wrap-6 { background-image: url(../../assets/mbg6.png); background-position: center; background-size: cover; } }
