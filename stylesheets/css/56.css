@@ -105,16 +105,16 @@ progress::-webkit-progress-value { background-color: #fff; }
 .social:hover { opacity: 1; }
 
 /* line 264, ../sass/56.scss */
-#social-email { position: fixed; display: block; bottom: 30px; right: 30px; z-index: 100000; }
+#social-email { position: fixed; display: block; bottom: 30px; right: 30px; z-index: 100000; font-size: 12px; }
 
-/* line 272, ../sass/56.scss */
+/* line 273, ../sass/56.scss */
 #social-soundcloud { position: fixed; display: block; bottom: 30px; right: 60px; z-index: 100000; }
 
-/* line 280, ../sass/56.scss */
+/* line 281, ../sass/56.scss */
 .social-link a { z-index: 100000; }
 
 @font-face { font-family: 'arapey'; src: url("../../assets/Arapey-Italic.ttf") format("truetype"); }
-@media (max-device-width: 769px) { /* line 290, ../sass/56.scss */
+@media (max-device-width: 769px) { /* line 291, ../sass/56.scss */
   #goodbye button i { font-size: 14px; }
-  /* line 294, ../sass/56.scss */
+  /* line 295, ../sass/56.scss */
   #iframe-container { width: 100%; height: 100%; overflow: hidden; } }
