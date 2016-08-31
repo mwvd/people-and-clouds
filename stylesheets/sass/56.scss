@@ -251,13 +251,36 @@ progress::-webkit-progress-value {
 	background: url(../../assets/waiting.gif) center repeat #ffffff;
 }
 
+.social {
+    font-size: 10px;
+    color: #fff;
+    opacity: 0.7;
+    z-index: 565656565656;
+}
+
+.social:hover {
+    opacity: 1;
+}
+
+#social-email {
+    position: fixed;
+    bottom: 20;
+    left: 25;
+}
+
+#social-soundcloud {
+    position: fixed;
+    bottom: 20;
+    left: 20;
+}
+
 @font-face {
   font-family: 'arapey';
   src: url('../../assets/Arapey-Italic.ttf')  format('truetype');
 }
 
 @media (max-device-width:769px) {
-    #goodbye {
+    #goodbye button i {
         font-size: 14px;
     }
     
