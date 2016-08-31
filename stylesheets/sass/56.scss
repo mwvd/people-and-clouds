@@ -88,6 +88,7 @@ iframe {
     top: 0;
     left: 0;
     @include boxflex;
+    z-index: 3;
 }
 
 .sc-player {
@@ -96,6 +97,7 @@ iframe {
     border: 1px solid #fff;
     position: relative;
     vertical-align: middle;
+    z-index: 3;
 }
 
 .song-titles {
@@ -333,6 +335,7 @@ progress::-webkit-progress-value {
         top: 0;
         left: 0;
         background-color: blue;
+        z-index: 2;
     }
     
     #mobile-wrap-1 {
