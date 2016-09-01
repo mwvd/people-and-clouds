@@ -539,26 +539,6 @@ plangular.directive('plangular', ['$timeout', 'plangularConfig', function($timeo
           scope.next();
         }
       });
-        
-        var $currentElement = $(".post").first();
-        player.audio.addEventListener('ended', function() {
-            
-        
-                var $nextElement = $currentElement.next('.post');
-                // Check if next element actually exists
-                if($nextElement.length) {
-                    // If yes, update:
-                    // 1. $currentElement
-                    // 2. Scroll position
-                    $currentElement = $nextElement;
-                    $('html, body').stop(true).animate({
-                        scrollTop: $nextElement.offset().top
-                    }, 1000);
-                }
-                return false;
-            });
-            
-      });
 
     }
 
