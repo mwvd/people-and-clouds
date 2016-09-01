@@ -540,10 +540,10 @@ plangular.directive('plangular', ['$timeout', 'plangularConfig', function($timeo
         }
       });
         
-        player.audio.addEventListener('ended', function() {
         var $currentElement = $(".post").first();
-
-            $(".icon-next").click(function () {
+        player.audio.addEventListener('ended', function() {
+            
+        
                 var $nextElement = $currentElement.next('.post');
                 // Check if next element actually exists
                 if($nextElement.length) {
@@ -557,6 +557,7 @@ plangular.directive('plangular', ['$timeout', 'plangularConfig', function($timeo
                 }
                 return false;
             });
+            
       });
 
     }
